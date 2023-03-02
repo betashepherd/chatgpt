@@ -58,7 +58,8 @@ func main() {
 	}
 	ctx := context.Background()
 	options := []gpt3.ClientOption{
-		gpt3.WithDefaultEngine(gpt3.TextDavinci003Engine),
+		//gpt3.WithDefaultEngine(gpt3.TextDavinci003Engine),
+		gpt3.WithDefaultEngine("gpt-3.5-turbo"),
 		gpt3.WithTimeout(time.Second * 600),
 		gpt3.WithHTTPClient(httpClient),
 	}
